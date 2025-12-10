@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - My Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s;
+        }
+
+        body.dark-mode header {
+            background-color: #444;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .toggle {
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        /* Blog Section */
+        .blogs {
+            padding: 4rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .blog-post {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-date {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .blog-content p {
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s;
+        }
+
+        body.dark-mode footer {
+            background-color: #444;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .blogs {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle" onclick="toggleMode()">🌙</div>
+    </header>
+
+    <section class="blogs">
+        <h1>My Blogs</h1>
+
+        <article class="blog-post">
+            <h2>Understanding Point of Sale (POS) Systems</h2>
+            <p class="blog-date">Published on October 10, 2023</p>
+            <div class="blog-content">
+                <p>Point of Sale (POS) systems are the backbone of modern retail and hospitality businesses. A POS system is a combination of hardware and software that processes transactions, manages inventory, and provides valuable insights into business operations.</p>
+                <p>Key components of a POS system include:</p>
+                <ul>
+                    <li><strong>Hardware:</strong> Cash registers, barcode scanners, receipt printers, and card readers.</li>
+                    <li><strong>Software:</strong> Transaction processing, inventory management, and reporting tools.</li>
+                    <li><strong>Integration:</strong> Often connected to payment gateways, accounting software, and customer databases.</li>
+                </ul>
+                <p>Benefits of implementing a POS system include improved efficiency, reduced errors, better inventory control, and enhanced customer experience. With the rise of cloud-based POS solutions, businesses can access real-time data from anywhere, making decision-making faster and more informed.</p>
+                <p>In today's digital age, POS systems are evolving to include features like mobile payments, loyalty programs, and analytics dashboards. Whether you're running a small boutique or a large restaurant chain, choosing the right POS system can significantly impact your bottom line.</p>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <h2>CNN-Based Face Recognition: Revolutionizing Security and Authentication</h2>
+            <p class="blog-date">Published on October 15, 2023</p>
+            <div class="blog-content">
+                <p>Convolutional Neural Networks (CNNs) have transformed the field of computer vision, particularly in face recognition technology. CNN-based face recognition systems use deep learning algorithms to identify and verify individuals from images or video feeds with remarkable accuracy.</p>
+                <p>How CNNs work in face recognition:</p>
+                <ol>
+                    <li><strong>Feature Extraction:</strong> CNN layers detect facial features like eyes, nose, and mouth.</li>
+                    <li><strong>Embedding:</strong> Faces are converted into numerical representations (embeddings).</li>
+                    <li><strong>Comparison:</strong> Embeddings are compared to identify matches or similarities.</li>
+                </ol>
+                <p>Advantages of CNN-based face recognition include high accuracy rates (often exceeding 99%), real-time processing capabilities, and robustness to variations in lighting, pose, and expression. These systems are widely used in security surveillance, access control, and biometric authentication.</p>
+                <p>However, challenges remain, including privacy concerns, potential biases in training data, and the need for large datasets. As technology advances, CNN-based face recognition continues to evolve, with applications expanding into areas like emotion detection and personalized marketing.</p>
+                <p>The future of face recognition lies in combining CNNs with other AI techniques to create more sophisticated and ethical systems.</p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Prashanth Kulkarni. All rights reserved.</p>
+        <ul>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+            const toggle = document.querySelector('.toggle');
+            toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle" onclick="toggleMode()">🌙</div>
+    </header>
+<style>
+        
+        
+        
+    </style>
+    <section id="hero" class="hero">
+        <h1>PRASHANTH KULKARNI</h1>
+        <p>Aspiring Web Developer</p>
+        <div class="cta-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+    <section class="hero">
+       
+
+
+    </section>
+
+
+    <section id="about" class="about">
+        <img src="WhatsApp Image 2025-11-19 at 04.00.13_342151e4.jpg" alt="Your Image"> 
+        
+        <div>
+            <h2>About Me</h2>
+            <p> I am a B.Tech undergraduate passionate about developing practical and user-focused technology solutions. 
+               <p>I enjoy learning new tools, building projects that strengthen my engineering skills, and applying my knowledge to real-world problems.</p>  I am actively seeking opportunities to grow through internships and collaborative work.</p>
+            <ul class="skills">
+                <p> My skills :</p>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <style></style>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="WhatsApp Image 2025-12-10 at 16.00.07_21d32d2a.jpg" alt="Project Screenshot">
+                <h3>Project Title</h3>
+                <p>Tech Stack: HTML, CSS, JS</p>
+                <div class="project-links">
+                    <a href="#" class="btn">GitHub</a>
+                    <a href="#" class="btn">Demo</a>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/prashanth-kulkarni-645924262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ">LinkedIn</a>
+            <a href="https://github.com/prasharmy/devops
+">GitHub</a>
+            <a href="https://www.instagram.com/prash1nth?igsh=bmw5cWcyejg1anBt&utm_source=qr    ">instagram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </footer>
+  
+
+
+
+   <script>
+    function toggleMode() {
+        document.body.classList.toggle('dark-mode');
+        const toggle = document.querySelector('.toggle');
+        toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    }
+</script>
+
+<!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- EmailJS Init -->
+<script>
+  (function() {
+      emailjs.init("KraLvq25mSlk192vx");  
+  })();
+</script>
+
+<!-- Your EmailJS Form Handler -->
+<script src="email.js"></script>
+
+
+
+</body>
+</html>

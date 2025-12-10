@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HERO WITH BACKGROUND -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Your Name</h1>
+    <p>B.Tech Undergraduate | Developer</p>
+  </div>
+</section>
+
+
+
+<!-- CONTACT FORM -->
+<section class="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contact-form">
+    <input type="text" name="from_name" placeholder="Your Name" required>
+    <input type="email" name="reply_to" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <p id="status-message"></p>
+</section>
+
+
+
+<!-- EMAILJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="email.js"></script>
+
+
+</body>
+</html>
