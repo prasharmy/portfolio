@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prashanth Kulkarni - Aspiring Web Developer. Portfolio showcasing projects, skills in JavaScript, React, Node.js, and MongoDB. Contact for internship opportunities.">
+    <meta name="keywords" content="web developer, JavaScript, React, Node.js, MongoDB, portfolio, freelance">
+    <meta name="author" content="Prashanth Kulkarni">
+    <meta property="og:title" content="Prashanth Kulkarni - Web Developer Portfolio">
+    <meta property="og:description" content="Aspiring web developer showcasing projects and skills. Available for internships and freelance opportunities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/prasharmy/porfolio">
+    <meta name="theme-color" content="#0f3460">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
@@ -15,8 +23,11 @@
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="#comments">Comments</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -30,17 +41,7 @@
     <section id="hero" class="hero">
         <h1>PRASHANTH KULKARNI</h1>
         <p>Aspiring Web Developer</p>
-        <div class="cta-buttons">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn">Contact Me</a>
-        </div>
     </section>
-    <section class="hero">
-       
-
-
-    </section>
-
 
     <section id="about" class="about">
         <img src="WhatsApp Image 2025-11-19 at 04.00.13_342151e4.jpg" alt="Your Image"> 
@@ -55,7 +56,85 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
             </ul>
-            <style></style>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>Languages</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚛️</div>
+                <h3>Frameworks & Libraries</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Mongoose</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🛠️</div>
+                <h3>Tools & Platforms</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>MongoDB</li>
+                    <li>VS Code</li>
+                    <li>MongoDB Atlas</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>Design & Web</h3>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>UI/UX Basics</li>
+                    <li>CSS Animations</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Aspiring Web Developer</h3>
+                    <p class="timeline-role">B.Tech Student | Self-Learning</p>
+                    <p class="timeline-date">2024 - Present</p>
+                    <p class="timeline-description">Building web applications with JavaScript, React, and Node.js. Learning full-stack development through projects and practical experience. Actively seeking internship opportunities.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Frontend Development Projects</h3>
+                    <p class="timeline-role">Portfolio & Learning</p>
+                    <p class="timeline-date">2024</p>
+                    <p class="timeline-description">Developed responsive portfolio website with comments & ratings feature. Integrated MongoDB Atlas for database management. Implemented EmailJS for contact functionality.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Technical Skills Development</h3>
+                    <p class="timeline-role">Continuous Learning</p>
+                    <p class="timeline-date">Ongoing</p>
+                    <p class="timeline-description">Mastering HTML, CSS, JavaScript fundamentals. Exploring backend technologies, APIs, databases, and DevOps basics. Contributing to personal projects and open-source initiatives.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -63,7 +142,9 @@
         <h2>Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <img src="WhatsApp Image 2025-12-10 at 16.00.07_21d32d2a.jpg" alt="Project Screenshot">
+                <a href="WhatsApp Image 2025-12-10 at 16.00.07_21d32d2a.jpg" target="_blank" rel="noopener noreferrer" class="project-image-link">
+                    <img src="WhatsApp Image 2025-12-10 at 16.00.07_21d32d2a.jpg" alt="Project Screenshot">
+                </a>
                 <h3>Project Title</h3>
                 <p>Tech Stack: HTML, CSS, JS</p>
                 <div class="project-links">
@@ -75,31 +156,71 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/prashanth-kulkarni-645924262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ">LinkedIn</a>
-            <a href="https://github.com/prasharmy/devops
+    <section id="comments-contact-wrapper" class="comments-contact-wrapper">
+        <section id="comments" class="comments">
+            <h2>Comments & Ratings</h2>
+            <div class="comments-stats">
+                <p>Total Reviews: <span id="total-comments">0</span></p>
+                <p>Average Rating: <span id="avg-rating">0</span>/5 ⭐</p>
+            </div>
+
+            <div class="comment-form-container">
+                <h3>Leave a Comment</h3>
+                <form id="comment-form">
+                    <input type="text" id="comment-name" placeholder="Your Name" required>
+                    <input type="email" id="comment-email" placeholder="Your Email" required>
+                    <div class="rating-input">
+                        <label>Rating:</label>
+                        <div class="star-rating">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                        <input type="hidden" id="comment-rating" value="0" required>
+                    </div>
+                    <textarea id="comment-message" placeholder="Your Comment" required></textarea>
+                    <button type="submit" class="btn">Submit Comment</button>
+                </form>
+            </div>
+
+            <div class="comments-list" id="comments-list">
+                <p class="loading">Loading comments...</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/prashanth-kulkarni-645924262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ">LinkedIn</a>
+                <a href="https://github.com/prasharmy/devops
 ">GitHub</a>
-            <a href="https://www.instagram.com/prash1nth?igsh=bmw5cWcyejg1anBt&utm_source=qr    ">instagram</a>
-        </div>
+                <a href="https://www.instagram.com/prash1nth?igsh=bmw5cWcyejg1anBt&utm_source=qr    ">instagram</a>
+            </div>
+        </section>
     </section>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <p>&copy; 2025 Prashanth Kulkarni. All rights reserved.</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="#comments">Comments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </footer>
   
 
@@ -125,6 +246,9 @@
 
 <!-- Your EmailJS Form Handler -->
 <script src="email.js"></script>
+
+<!-- Comments and Ratings Handler -->
+<script src="comments.js"></script>
 
 
 
